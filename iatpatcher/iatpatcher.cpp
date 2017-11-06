@@ -29,13 +29,13 @@ PatchFunc patch[] = {
 	{"SleepConditionVariableCS", "kernel32.dll", "SleepConditionVariableCS", "nonxp.dll"},
 	{"WSASendMsg", "ws2_32.dll", "WSASendMsg", "nonxp.dll"},
 	{"WakeConditionVariable", "kernel32.dll", "WakeConditionVariable", "nonxp.dll"},
+	{"_ftol2", "msvcrt.dll", "_ftol2", "nonxp.dll"},
+	{"_ftol2_sse", "msvcrt.dll", "_ftol2_sse", "nonxp.dll"},
 	{"if_nametoindex", "iphlpapi.dll", "if_nametoindex", "nonxp.dll"},
 	{"inet_ntop", "ws2_32.dll", "inet_ntop", "nonxp.dll"},
 	{"inet_pton", "ws2_32.dll", "inet_pton", "nonxp.dll"},
 
 	// corrections
-	{"_ftol2", "msvcrt.dll", "_ftol", "msvcrt.dll"},
-	{"_ftol2_sse", "msvcrt.dll", "_ftol", "msvcrt.dll"},
 
 	//{"__stdio_common_vsprintf_s", "api-ms-win-crt-stdio-l1-1-0.dll", "__stdio_common_vsprintf_s", "msvcr110.dll"},
 	//{"_calloc_base", "api-ms-win-crt-heap-l1-1-0.dll", "_calloc_base", "msvcr110.dll"},
@@ -49,8 +49,8 @@ PatchFunc patch[] = {
 	//{"terminate", "api-ms-win-crt-runtime-l1-1-0.dll", "terminate", "msvcr110.dll"},
 
 	// non-exist function corrections
-	{"_ftol2", "msvcr100.dll", "_ftol", "msvcr100.dll"},
-	{"_ftol2_sse", "msvcr100.dll", "_ftol", "msvcr100.dll"},
+	{"_ftol2", "msvcr100.dll", "_ftol2", "nonxp.dll"},
+	{"_ftol2_sse", "msvcr100.dll", "_ftol2_sse", "nonxp.dll"},
 	{"time", "msvcr100.dll", "_time32", "msvcr100.dll"},
 
 	// stubs

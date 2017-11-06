@@ -25,6 +25,8 @@ SleepConditionVariableCS
 WSASendMsg
 WakeAllConditionVariable	=RtlWakeAllConditionVariable
 WakeConditionVariable		=RtlWakeConditionVariable
+_ftol2
+_ftol2_sse
 if_nametoindex
 inet_ntop
 inet_pton

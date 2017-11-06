@@ -1,5 +1,5 @@
-#define FILEVER                         0,0,4,40
-#define FILEVERSTR                      "0.0.4.40\0"
+#define FILEVER                         0,0,4,45
+#define FILEVERSTR                      "0.0.4.45\0"
 #define PRODUCTVER                      FILEVER
 #define PRODUCTVERSTR                   FILEVERSTR
 
